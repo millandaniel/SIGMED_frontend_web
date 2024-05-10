@@ -2,32 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1 {
+    font-family: "Jomhuria";
+    color: #0090bd;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: "Jomhuria";
+    color: #0090bd;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: "Jomhuria";
+    color: black;
+    font-size: 27px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+}
+
+h4 {
+    font-family: "Arial";
+    color: black;
+    font-size: 12px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+h6 {
+    color: #0090bd;
+}
+
+
+input {
+    background-color: #e5e7eb;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+button {
+    background-color: #0090bd;
+}
+
+.divlist {
+    background-color: #e5e7eb;
+    width: max-content;
 }

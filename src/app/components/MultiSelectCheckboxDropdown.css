@@ -1,0 +1,35 @@
+/* MultiSelectCheckboxDropdown.css */
+.multi-select-checkbox-dropdown .css-1okebmr-indicatorSeparator {
+    display: none;
+}
+
+.multi-select-checkbox-dropdown .css-26l3qy-menu {
+    margin-top: 0;
+}
+
+.multi-select-checkbox-dropdown .css-1pahdxg-control {
+    border-radius: 4px;
+}
+
+.multi-select-checkbox-dropdown .css-12jo7m5 {
+    border-bottom: none !important;
+}
+
+.multi-select-checkbox-dropdown .css-1hb7zxy-IndicatorsContainer {
+    display: none;
+}
+
+/* Estilos para las casillas de verificación */
+.multi-select-checkbox-dropdown .css-1gtu0rj-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.multi-select-checkbox-dropdown .css-5aaurw-option {
+    padding: 8px 12px;
+}
+
+.multi-select-checkbox-dropdown .css-1n7v3ny-option {
+    padding-left: 32px;
+    /* Alinear las opciones con las casillas de verificación */
+}
