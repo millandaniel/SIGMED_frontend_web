@@ -84,45 +84,51 @@ function Presentacion() {
                     <h2 className=" text-5xl">Nuestro Equipo</h2>
                     <br />
                     <div className={styles.teamMembers}>
-                        <div className={styles.teamMember}>
-                            <Image className={styles.logoSigmed}
-                                src={"/Andres.jpg"}
-                                alt={"logo"}
-                                width={400}
-                                height={125}>
-                            </Image>
-                            <p className=" font-bold">Andres Porras</p>
-                            <br />
-                            <p>Scrum Master
-                                Product Owner
-                                Desarrollador</p>
-                        </div>
-                        <div className={styles.teamMember}>
-                            <Image className={styles.logoSigmed}
-                                src={"/Sebastian.jpg"}
-                                alt={"logo"}
-                                width={400}
-                                height={125}>
-                            </Image>
-                            <p className=" font-bold">Sebastian Sandoval</p>
-                            <br />
-                            <p>Product Owner
-                                Desarrollador
-                                Arquitecto de Software</p>
-                        </div>
-                        <div className={styles.teamMember}>
-                            <Image className={styles.logoSigmed}
-                                src={"/Daniel.png"}
-                                alt={"logo"}
-                                width={400}
-                                height={125}>
-                            </Image>
-                            <p className=" font-bold">Daniel Millan</p>
-                            <br />
-                            <p>Product Owner
-                                Desarrollador
-                                Tester QA</p>
-                        </div>
+                        <center>
+                            <div className={styles.teamMember}>
+                                <Image className=" w-56 h-56 object-cover border-4 border-cyan-700"
+                                    src={"/Andres.jpg"}
+                                    alt={"logo"}
+                                    width={400}
+                                    height={400}>
+                                </Image>
+                                <p className=" font-bold">Andres Porras</p>
+                                <br />
+                                <p>Scrum Master
+                                    Product Owner
+                                    Desarrollador</p>
+                            </div>
+                        </center>
+                        <center>
+                            <div className={styles.teamMember}>
+                                <Image className=" w-56 h-56 object-cover border-4 border-cyan-700"
+                                    src={"/Sebastian.jpg"}
+                                    alt={"logo"}
+                                    width={400}
+                                    height={400}>
+                                </Image>
+                                <p className=" font-bold">Sebastian Sandoval</p>
+                                <br />
+                                <p>Product Owner
+                                    Desarrollador
+                                    Arquitecto de Software</p>
+                            </div>
+                        </center>
+                        <center>
+                            <div className={styles.teamMember}>
+                                <Image className=" w-56 h-56 object-cover border-4 border-cyan-700"
+                                    src={"/Daniel.png"}
+                                    alt={"logo"}
+                                    width={400}
+                                    height={400}>
+                                </Image>
+                                <p className=" font-bold">Daniel Millan</p>
+                                <br />
+                                <p>Product Owner
+                                    Desarrollador
+                                    Tester QA</p>
+                            </div>
+                        </center>
                     </div>
                 </section>
                 <section>
