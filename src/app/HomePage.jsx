@@ -86,7 +86,7 @@ function Presentacion() {
                     <div className={styles.teamMembers}>
                         <div className={styles.teamMember}>
                             <Image className={styles.logoSigmed}
-                                src={"/Andres.png"}
+                                src={"/Andres.jpg"}
                                 alt={"logo"}
                                 width={400}
                                 height={125}>
@@ -99,7 +99,7 @@ function Presentacion() {
                         </div>
                         <div className={styles.teamMember}>
                             <Image className={styles.logoSigmed}
-                                src={"/Sebas.png"}
+                                src={"/Sebastian.jpg"}
                                 alt={"logo"}
                                 width={400}
                                 height={125}>
