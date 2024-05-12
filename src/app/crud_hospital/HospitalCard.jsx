@@ -43,7 +43,8 @@ const columnas = [
         name: "Especialidades",
         selector: row => row.especialidades,
         center: true,
-        cell: row => <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>{Array.isArray(row.especialidades) ? row.especialidades.join(', ') : row.especialidades.split(',').join(', ')}</div>
+
+        cell: row => <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', margin: '10px' }}>{Array.isArray(row.especialidades) ? row.especialidades.join(', ') : row.especialidades.split(',').join(', ')}</div>
     },
     {
         name: "Eps Asociadas",
@@ -210,6 +211,7 @@ function HospitalCard({ hospitales }) {
         fetchEspecialidades();
         fetchEps();
     }, []);
+
 
     return (
         <div className="rounded-md justify-between">

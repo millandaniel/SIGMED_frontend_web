@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
+import { useRouter } from "next/navigation";
 import DataTable from "react-data-table-component";
 import { Modal } from 'bootstrap'; // Importa solo el componente Modal de Bootstrap
 
@@ -39,7 +40,10 @@ const columnas = [
 ];
 
 function SolicitudesTable({ solicitudes }) {
+
     // Estado para controlar la fila seleccionada
+    const router = useRouter();
+
     const [filteredSolicitudes, setFilteredSolicitudes] = useState([]);
     const [selectedRow, setSelectedRow] = useState(null);
     const [nombreHospital, setNombreHospital] = useState('');
@@ -60,6 +64,23 @@ function SolicitudesTable({ solicitudes }) {
         const modal = new Modal(document.getElementById('modal'), {});
         modal.show();
     };
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            // Actualiza los registros cada 5000 milisegundos (5 segundos)
+            const userData = JSON.parse(localStorage.getItem('user'));
+            if (userData && userData.nombre_hospital) {
+                const filtered = solicitudes.filter(solicitud => solicitud.nombre_hospital === userData.nombre_hospital);
+                setFilteredSolicitudes(filtered);
+
+                router.refresh();
+                console.log("ACTUALIZANDO TABLA")
+            }
+        }, 300000);
+
+        return () => clearInterval(intervalId); // Limpia el intervalo cuando el componente se desmonta
+    }, [solicitudes]);
+
 
     return (
         <div>

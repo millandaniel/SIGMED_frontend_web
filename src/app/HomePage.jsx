@@ -55,9 +55,9 @@ function Presentacion() {
             <main className={styles.container}>
 
                 <section>
-                    <div className=" bg-gray-100">
-                        <h1 className=" text-7xl font-bold">Bienvenido a Sigmed</h1>
-                        <p className=" text-base font-semibold">Agilizando la atención de emergencias médicas en Bogotá</p>
+                    <div className=" bg-white">
+                        <h1 className=" text-7xl font-medium">Bienvenido a Sigmed</h1>
+                        <p className=" text-base font-medium">Agilizando la atención de emergencias médicas en Bogotá</p>
                         <br />
                     </div>
                 </section>

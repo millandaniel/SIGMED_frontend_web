@@ -1,6 +1,8 @@
 "use client"
 
 import React, { useState } from 'react';
+import { useEffect } from 'react';
+import { useRouter } from "next/navigation";
 import DataTable from "react-data-table-component";
 import { Modal } from 'bootstrap'; // Importa solo el componente Modal de Bootstrap
 
@@ -58,6 +60,9 @@ const columnas = [
 
 function SolicitudesTable({ solicitudes }) {
     // Estado para controlar la fila seleccionada
+
+    const router = useRouter();
+
     const [selectedRow, setSelectedRow] = useState(null);
 
     const [records, setRecords] = useState(solicitudes);
@@ -76,6 +81,16 @@ function SolicitudesTable({ solicitudes }) {
         })
         setRecords(filteredRecords)
     }
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            // Actualiza los registros
+            setRecords([...solicitudes]);
+            router.refresh();
+        }, 300000);
+
+        return () => clearInterval(intervalId);
+    }, [solicitudes]);
 
     return (
         <div>

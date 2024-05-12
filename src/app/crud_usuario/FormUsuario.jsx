@@ -272,7 +272,7 @@ function FormUsuario() {
                                                     onChange={e => setnuevotelefono(e.target.value)}
                                                 />
                                                 <label className=" font-bold" htmlFor="title">
-                                                    Usuario
+                                                    Nombre de Usuario
                                                 </label>
                                                 <input
                                                     className=" block"
@@ -395,7 +395,7 @@ function FormUsuario() {
                                                     onChange={e => setnuevotelefono(e.target.value)}
                                                 />
                                                 <label className=" font-bold" htmlFor="title">
-                                                    Usuario
+                                                    Nombre de Usuario
                                                 </label>
                                                 <input
                                                     className=" block"
