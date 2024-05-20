@@ -18,7 +18,7 @@ const BarraNavegacion = () => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.logoSigmed}>
-                <Link href="/">
+                <Link href="/crud_solicitudes">
                     <Image className={styles.logoSigmed}
                         src={"/LogoSigmed05.png"}
                         alt={"logo"}
@@ -29,7 +29,7 @@ const BarraNavegacion = () => {
             </div>
             <div className={styles.contenedorLinks} >
                 <button
-                    className=" text-white mr-8 text-5xl"
+                    className={styles.linksNav}
                     onClick={cerrarSesion}>
                     Cerrar Sesión</button>
             </div>
