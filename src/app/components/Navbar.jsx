@@ -43,7 +43,7 @@ const BarraNavegacion = () => {
                     EPS
                 </Link>
                 <button
-                    className=" text-white mr-8 text-4xl"
+                    className={styles.linksNav}
                     onClick={cerrarSesion}>
                     Cerrar Sesión</button>
             </div>
