@@ -104,7 +104,7 @@ function SolicitudesTable({ solicitudes }) {
                     paginationPerPage={6}
                     paginationRowsPerPageOptions={[6, 12, 18, 24, 30, 36]}
                     highlightOnHover
-                    noDataComponent={<h2 className=' text-4xl text-red-600'>No hay Hospitales Para Mostrar</h2>}
+                    noDataComponent={<h2 className=' text-4xl text-red-600'>No hay Solicitudes registradas en este momento</h2>}
                     paginationComponentOptions={opcionesPagina}
                     responsive
                 />
